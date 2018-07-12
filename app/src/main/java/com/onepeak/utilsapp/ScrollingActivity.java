@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.onepeak.utilsapp.toast.ToastUtil;
+
 
 public class ScrollingActivity extends AppCompatActivity {
 
@@ -25,6 +27,8 @@ public class ScrollingActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+
+                ToastUtil.showShortToast(ScrollingActivity.this,"看看看看");
             }
         });
     }
